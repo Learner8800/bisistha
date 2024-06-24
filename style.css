@@ -13,6 +13,21 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+
+
+#title{
+  text-align: center;
+}
+
+#subtitle{
+  text-align: center;
+}
+
+#message{
+  text-align: left;
+  font-family: cursive;
+}
+
 main {
   display: flex;
   position: absolute;
@@ -71,6 +86,38 @@ img {
   width: auto;
   text-align: right;
 }
+
+.cloud-back-left,
+.cloud-front-left {
+  position : relative;  
+  width: auto;
+  text-align: left;
+}
+
+.cloud-front-left {
+  bottom: -85vh;
+
+  @media screen and (min-height: $min-height) {
+    bottom: calc(-98vh + 55px);
+  }
+
+  @media screen and (min-width: $medium) and (min-height: $min-height) {
+    bottom: calc(-85vh + 132px);
+  }
+}
+
+.cloud-back-left {
+  bottom: -75vh;
+
+  @media screen and (min-height: $min-height) {
+    bottom: calc(-98vh + 87px);
+  }
+
+  @media screen and (min-width: $medium) and (min-height: $min-height) {
+    bottom: calc(-85vh + 182px);
+  }
+}
+
 
 .cloud-front {
   bottom: -85vh;
@@ -152,4 +199,6 @@ img {
     vertical-align: middle;
   }
 }
+
+
 
